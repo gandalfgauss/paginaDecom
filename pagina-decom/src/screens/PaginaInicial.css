@@ -1,0 +1,128 @@
+.externo{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#conteudo{
+    display: inline-block;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+#cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #20232a;
+    /*background-image: linear-gradient(to bottom, #20232a, #252830);*/
+}
+
+#logoDecom
+{
+    width: 5vw;
+    height: 5vw;
+}
+
+#paragrafoCabecalhoDecom
+{
+    color: #ffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+#myInput{
+    background-image: url('../images/searchIcon.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+    border-radius: 16px;
+    border-style: double;
+    font-size: 1.2vw;
+    padding: 0;
+
+}
+
+#myInput:hover{
+    border: 1px solid #61dafb;
+}
+
+#myInput:focus{
+    border: 1px solid #61dafb;
+    
+}
+
+#logoAreaRestrita
+{
+    position: relative;
+    width: 7vw;
+    height: 7vw;
+}
+
+
+#cabecalhoEducacao{
+    background-color: #ffff;
+    /*flex-grow: 1;/*
+    background-color: #f0ecec;
+    /*background-image: linear-gradient(to bottom, #20232a, #252830);*/
+}
+
+.paragrafoEducacao
+{
+    color: #20232a;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3vw;
+    text-align: left;
+    margin-left: 6vw;
+}
+
+.activep{
+    color: #61dafb;
+    transition: color 0.3s ease-in-out;
+}
+
+.image-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px;
+    margin-left: 6vw;
+  }
+  
+  .image-item {
+    width: 15vw;
+    height: 20vw;
+    margin-right: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+    margin-left: 1vw;
+    border: 2px solid transparent;
+    transition: border-color 0.5s ease-in-out;
+    
+  }
+  
+  .image-item.active {
+    border-color: #61dafb;
+    box-shadow: 3px 3px 3px #61dafb;
+    width: 17vw;
+    height: 22vw;
+    z-index: 1;
+    transition: box-shadow 0.2s ease-in-out;
+    transition: width 0.15s ease-in-out;
+    transition: height 0.15s ease-in-out;
+  }
+
+  .linhaInferior{
+    background-color: #ececec;
+    height: 1px;
+}
+
+.menu{
+    display: inline-block;
+    background-color: #f7f7f7;
+    width: 100vw;
+    position: fixed;
+}
+
+
