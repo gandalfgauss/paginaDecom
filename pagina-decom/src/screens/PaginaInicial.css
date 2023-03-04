@@ -9,9 +9,10 @@ a{
     display: flex;
     flex-direction: column;
     text-align: left;
-    font-size: 14px;
+    font-size: 1.04vw;
     color: #fff;
     font-family: Roboto;
+    
 }
 
 /* Cabecalho de Pagina*/
@@ -19,8 +20,11 @@ a{
     display: flex;
     flex-direction: column;
     background-color: #20232a;
-    font-size: 18px;
+    font-size: 1.18vw;
     color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 /* Cabecalho 1 do Cabecalho*/
@@ -30,12 +34,18 @@ a{
     align-items: center;
     justify-content: center;
     background-color: #16181d;  
-    gap: 29.09px;
-    line-height: 40px;
+    gap: 2.15vw;
+    line-height: 2.95vw;
+}
+
+.textoDecomCabecalho1
+{
+    line-height: 0.74vw;
 }
 
 .textoUfopCabecalho1{
-    font-size: 17px;
+    line-height: 0.74vw;
+    font-size: 1.26vw;
     color: #61dafb;
     
 }
@@ -44,6 +54,7 @@ a{
 .menuCabecalho{
     display: flex;
     flex-direction: row;
+    margin-left: 6.64vw;
 
 } 
 
@@ -52,18 +63,18 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.33vw;
     color: #61dafb;
 
 }
 .menuCabecalhoDecomImagem{
- 
-    width: 44px;
-    height: 39px;
+    width: 3.25vw;
+    height: 2.88vw;
     object-fit: cover;
   }
 .menuCabecalhoDecomTexto{
-    line-height: 20px;
+    line-height: 0px;
+    font-weight: 400;
 }
 
 
@@ -73,14 +84,14 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 7.38vw;
+    gap: 0.3vw;
 }
 
 
 .textoCabecalhoMenu{
-    line-height: 0px;
     font-weight: 300;
-    margin-left: 25px; 
+    margin-left: 0.89vw; 
     transition: 0.2s ease-in-out;
 }
 
@@ -98,6 +109,254 @@ a{
     
     font-weight: 300;
     color: #61dafb;
-    border-bottom: 2px solid #61dafb;
+    border-bottom: 0.15vw solid #61dafb;
     
+}
+
+.menuCabecalhoPesquisa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3.32vw;
+    box-sizing: border-box;   
+    gap: 0.3vw;
+    
+}
+
+.menuCabecalhoIconePesquisaSvg{
+    width: 1.18vw;
+    height: 1.18vw;
+
+}
+
+.menuCabecalhoInputPesquisa{
+    font-weight: 300;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    border-radius: 0.15vw;
+    color: #fff;
+    outline: none;
+    font-size: 1.04vw;
+    font-family: Roboto;
+    width: 5.9vw;
+}
+
+.menuCabecalhoInputPesquisa::placeholder{
+    color: #757575;
+    font-size: 1.18vw;
+    font-family: Roboto;
+}
+
+.menuCabecalhoInputPesquisa:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+    font-size: 1.04vw;
+    font-family: Roboto;
+
+}
+
+.menuCabecalhoAreaRestrita{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.37vw;
+    margin-left: 3.32vw;
+    
+}
+
+.menuCabecalhoAreaRestritaImagem{
+    width: 1.63vw;
+    height: 1.63vw;
+    object-fit: cover;
+    
+}
+
+.menuCabecalhoAreaRestritaTexto{
+    font-weight: 300;
+    font-size: 1.12vw;
+    transition: 0.2s ease-in-out;
+}
+
+.menuCabecalhoAreaRestritaTexto:hover{
+    color: #61dafb;
+}
+
+
+/* Meio da Pagina*/
+.meioDaPagina
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+
+.conteudoPrincipal
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6.64vw;
+    font-size: 2.22vw;
+    color: #000;
+}
+
+
+.principalTextoInicio{
+    font-size: 4.43vw;
+    line-height: 4.80vw;
+    color: #282c34;
+    margin-top: 4.43vw;
+    margin-bottom: 6.27vw;
+    
+}
+
+.principalLinha{
+    border-bottom: 0.15vw solid #E3E2E2;
+    border-width: 100%;
+}
+
+
+.principalBemVindoAoDecom{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.95vw;
+}
+
+.principalBemVindoAoDecomTexto{
+    line-height: 4.8vw;
+}
+
+.principalBemVindoAoDecomSubTexto{
+    font-size: 1.48vw;
+    line-height: 0.74vw;
+}
+
+.principalBemVindoAoDecomImagem{
+    width: 53.1vw;
+    height: 18.44vw;
+    object-fit: cover;
+}
+
+.principalEducacao{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.95vw;
+    margin-bottom: 2.95vw;
+}
+
+.principalEcucacaoTexto{
+    line-height: 4.8vw;
+}
+
+.principalEducacaoSubTexto{
+    font-size: 1.48vw;
+    line-height: 0.74vw;
+}
+
+.principalEducacaoCarrocel{
+    display: flex;
+    flex-direction: row;
+    gap: 0.59vw;
+    margin-bottom: 1.48vw;
+}
+
+
+.principalEducacaoCarrocelImagem{
+    width: 11.07vw;
+    height: 12.53vw;
+    box-shadow: 0.23vw 0.23vw 0.23vw 0.23vw rgba(228, 228, 228, 0.8);
+    border: 0.15vw solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.principalEducacaoCarrocelImagem:hover{
+    border-color: #61dafb;
+    box-shadow: 0.23vw 0.23vw 0.23vw 0.23vw rgba(97, 218, 251, 0.8); 
+    width: 11.62vw;
+    height: 13.91vw;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* Menu Lateral */
+
+.menuLateral
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #e4e4e4;
+    position: fixed;
+    height: 100%;
+    width: 30%;
+    right: 0;
+    line-height: 18.4px;
+    gap: 5px;
+    font-size: 14px;
+    color: #1a1a1a;
+    font-family: Roboto;
+ 
+}
+
+.menuLateralTitulo{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4.43vw;
+    gap: 10px;
+}
+
+.menuLateralTituloTexto{
+ 
+    letter-spacing: 1.12px;
+    line-height: 42px;
+    text-transform: uppercase;
+    position: relative;
+    left: 5px;
+}
+
+.menuLateralTituloIcon{
+
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 13px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.rodaImagem{
+    transform: rotate(180deg);
+    transition: transform 0.4s ease-in-out;
+}
+
+.menuLateralOpcoes{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-left: 15px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.menuLateralOpcaoNaoAtiva
+{
+    margin: 7px;
+    padding-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuLateralOpcaoNaoAtiva:hover
+{
+    color: #61dafb;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuLateralOpcaoAtiva{
+    border-left: 4px solid #61dafb;
+    box-sizing: border-box;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+
 }
