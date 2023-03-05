@@ -18,6 +18,52 @@ import logoXR4 from "../images/logoXR4.png";
 
 import menuLateralSeta from "../images/menuLateralSeta.svg"
 
+
+function Rodape()
+{
+
+    return (
+        <div className='rodape'>
+            <div className='redesSociais'>
+                <p>OI</p>
+            </div>
+
+            <div className='contato'>
+                <div className='menuCabecalhoDecom'>
+                    <img
+                    className="menuCabecalhoDecomImagem"
+                    alt="Logo do DECOM"
+                    src={logoDecomCabecalho}
+                    />
+                    <a href='http://localhost:3000/'><p className="menuCabecalhoDecomTexto">DECOM</p></a>  
+                </div>
+
+                <div className="rodapeTexto">
+                    <p>
+                            Departamento de Computação | ICEB | Universidade Federal de
+                            Ouro Preto
+                    </p>
+                    <p>
+                            Campus Universitário Morro do Cruzeiro | CEP 35400-000 |
+                            Ouro Preto - MG, Brasil
+                    </p>
+                    <p>
+                        {`Telefone: +55 31 3559-1692 | `}
+                        <a
+                            href="mailto:decom@ufop.edu.br"
+                        >
+                            <span className="emailUfop">decom@ufop.edu.br</span>
+                        </a>
+                    </p>
+                </div>
+
+                
+            </div>
+
+        </div>
+    )
+}
+
 function MenuLateral(props)
 {
     const {referencias} = props
@@ -264,13 +310,14 @@ function Conteudo()
         <div className='conteudo'>
             <Cabecalho/>
             <MeioDaPagina/>
+            <Rodape/>
         </div>
     )
 }
 
 
 function PaginaInicial() {
-
+    document.title = "DECOM-UFOP|Início"
   return (
     <Conteudo/>
   );

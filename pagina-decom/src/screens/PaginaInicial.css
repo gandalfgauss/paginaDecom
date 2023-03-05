@@ -293,9 +293,9 @@ a{
     height: 100%;
     width: 30%;
     right: 0;
-    line-height: 18.4px;
-    gap: 5px;
-    font-size: 14px;
+    line-height: 1.36vw;
+    gap: 0.37vw;
+    font-size: 1.04vw;
     color: #1a1a1a;
     font-family: Roboto;
  
@@ -305,24 +305,24 @@ a{
     display: flex;
     flex-direction: row;
     margin-top: 4.43vw;
-    gap: 10px;
+    gap: 0.74vw;
 }
 
 .menuLateralTituloTexto{
  
-    letter-spacing: 1.12px;
-    line-height: 42px;
+    letter-spacing: 0.09vw;
+    line-height: 3.1vw;
     text-transform: uppercase;
     position: relative;
-    left: 5px;
+    left: 0.37vw;
 }
 
 .menuLateralTituloIcon{
 
-    width: 12px;
-    height: 12px;
+    width: 0.89vw;
+    height: 0.89vw;
     position: relative;
-    top: 13px;
+    top: 0.96vw;
     transition: transform 0.4s ease-in-out;
 }
 
@@ -334,16 +334,16 @@ a{
 .menuLateralOpcoes{
     display: flex;
     flex-direction: column;
-    font-size: 16px;
-    margin-left: 15px;
+    font-size: 1.18vw;
+    margin-left: 1.11vw;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
 .menuLateralOpcaoNaoAtiva
 {
-    margin: 7px;
-    padding-left: 10px;
+    margin: 0.52vw;
+    padding-left: 0.74vw;
     transition: all 0.3s ease-in-out;
 }
 
@@ -354,9 +354,46 @@ a{
 }
 
 .menuLateralOpcaoAtiva{
-    border-left: 4px solid #61dafb;
+    border-left: 0.30vw solid #61dafb;
     box-sizing: border-box;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
 
+}
+
+/* Rodape */
+.rodape{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    color: #61dafb;
+    background-color: #20232a;
+}
+
+.redesSociais{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+}
+
+.rodapeTexto{
+    font-size: 15px;
+    line-height: 6px;
+    margin-bottom: 0;
+    line-break: anywhere;
+    width: 100%;
+    color: #6b6b6b;
+}
+
+.emailUfop{
+    text-decoration: underline;
 }
