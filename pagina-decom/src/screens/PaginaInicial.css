@@ -12,7 +12,7 @@ a{
     font-size: 1.04vw;
     color: #fff;
     font-family: Roboto;
-    
+  
 }
 
 /* Cabecalho de Pagina*/
@@ -403,7 +403,9 @@ a{
 .textoInstagram:hover{
     background-image: linear-gradient(to right, #f73d0d, #c70088);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    
+    color: transparent;
+    opacity: 1;
+    transition: all 0.18s ease-in-out;    
 }
 
 
@@ -428,3 +430,385 @@ a{
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1000px) {
+    /* Estilos para telas menores que 1000px */
+    /* Todo conteudo da pagina*/
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 1.04vw;
+        color: #fff;
+        font-family: Roboto;
+      
+    }
+    
+    /* Cabecalho de Pagina*/
+    .cabecalho{
+        display: flex;
+        flex-direction: column;
+        background-color: #20232a;
+        font-size: 1.4vw;
+        color: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    
+    /* Cabecalho 1 do Cabecalho*/
+    .cabecalho1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #16181d;  
+        gap: 2.15vw;
+        line-height: 2.95vw;
+    }
+    
+    .textoDecomCabecalho1
+    {
+        line-height: 2vw;
+    }
+    
+    .textoUfopCabecalho1{
+        line-height: 2vw;
+        font-size: 1.26vw;
+        color: #61dafb;        
+    }
+    
+    /* Menu do Cabecalho*/
+    .menuCabecalho{
+        display: flex;
+        flex-direction: row;
+        margin-left: 2vw;
+    
+    } 
+    
+    .menuCabecalhoDecom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25vw;
+        color: #61dafb;
+    
+    }
+    .menuCabecalhoDecomImagem{
+        width: 3.25vw;
+        height: 2.88vw;
+        object-fit: cover;
+      }
+    
+    .menuCabecalhoOpcoes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5vw;
+        gap: 0.3vw;
+    }
+    
+    
+    .textoCabecalhoMenu{
+        font-weight: 300;
+        margin-left: 0.89vw; 
+        transition: 0.2s ease-in-out;
+    }
+    
+    .textoCabecalhoMenuInicio{
+        
+        font-weight: 300;
+        color: #61dafb;
+        border-bottom: 0.15vw solid #61dafb;
+        
+    }
+    
+    .menuCabecalhoPesquisa{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3vw;
+        box-sizing: border-box;   
+        gap: 0.3vw;
+        
+    }
+    
+    .menuCabecalhoIconePesquisaSvg{
+        width: 1.18vw;
+        height: 1.18vw;
+    
+    }
+    
+    .menuCabecalhoInputPesquisa{
+        font-weight: 300;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        border-radius: 0.15vw;
+        color: #fff;
+        outline: none;
+        font-size: 1.24vw;
+        font-family: Roboto;
+        width: 5.9vw;
+    }
+    
+    .menuCabecalhoInputPesquisa::placeholder{
+        color: #757575;
+        font-size: 1.18vw;
+        font-family: Roboto;
+    }
+    
+    .menuCabecalhoInputPesquisa:focus{
+        border: none;
+        box-shadow: none;
+        outline: none;
+        font-size: 1.04vw;
+        font-family: Roboto;
+    
+    }
+    
+    .menuCabecalhoAreaRestrita{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.37vw;
+        margin-left: 3.32vw;
+        
+    }
+    
+    .menuCabecalhoAreaRestritaImagem{
+        width: 1.63vw;
+        height: 1.63vw;
+        object-fit: cover;
+        
+    }
+    
+    .menuCabecalhoAreaRestritaTexto{
+        font-weight: 300;
+        font-size: 1.25vw;
+        transition: 0.2s ease-in-out;
+    }
+
+    
+    /* Meio da Pagina*/
+    
+    .conteudoPrincipal
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 3vw;
+        font-size: 5vw;
+        color: #000;
+    }
+    
+    
+    .principalTextoInicio{
+        font-size: 7vw;
+        line-height: 4.80vw;
+        color: #282c34;
+        margin-top: 5vw;
+        margin-bottom: 6.5vw;
+        
+    }
+    
+    .principalLinha{
+        border-bottom: 0.15vw solid #E3E2E2;
+        border-width: 100%;
+    }
+    
+    
+    .principalBemVindoAoDecom{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2vw;
+        margin-bottom: 4vw;
+    }
+    
+    .principalBemVindoAoDecomTexto{
+        line-height: 9vw;
+    }
+    
+    .principalBemVindoAoDecomSubTexto{
+        font-size: 2.1vw;
+        line-height: 4vw;
+    }
+    
+    .principalBemVindoAoDecomImagem{
+        width: 64.27vw;
+        height: 22.32vw;
+        object-fit: cover;
+    }
+    
+    .principalEducacao{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+    
+    .principalEcucacaoTexto{
+        line-height: 9vw;
+    }
+    
+    .principalEducacaoSubTexto{
+        font-size: 2.1vw;
+        line-height: 4vw;
+    }
+    
+    .principalEducacaoCarrocel{
+        display: flex;
+        flex-direction: row;
+        gap: 0.59vw;
+        margin-bottom: 1.48vw;
+    }
+    
+    
+    .principalEducacaoCarrocelImagem{
+        width: 15.23vw;
+        height: 17.24vw;
+        box-shadow: 0.23vw 0.23vw 0.23vw 0.23vw rgba(228, 228, 228, 0.8);
+        border: 0.15vw solid transparent;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .principalEducacaoCarrocelImagem:hover{
+        border-color: #61dafb;
+        box-shadow: 0.23vw 0.23vw 0.23vw 0.23vw rgba(97, 218, 251, 0.8); 
+        width: 15.99vw;
+        height: 19.13vw;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    
+    /* Menu Lateral */
+    
+    .menuLateral
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: #e4e4e4;
+        position: fixed;
+        height: 100%;
+        width: 30%;
+        right: 0;
+        line-height: 1.36vw;
+        gap: 0.37vw;
+        font-size: 2.5vw;
+        color: #1a1a1a;
+        font-family: Roboto;
+     
+    }
+    
+    .menuLateralTitulo{
+        display: flex;
+        flex-direction: row;
+        margin-top: 4.43vw;
+        gap: 0.74vw;
+    }
+    
+    .menuLateralTituloTexto{
+     
+        letter-spacing: 0.09vw;
+        line-height: 3.1vw;
+        text-transform: uppercase;
+        position: relative;
+        left: 0.37vw;
+    }
+    
+    .menuLateralTituloIcon{
+    
+        width: 0.89vw;
+        height: 0.89vw;
+        position: relative;
+        top: 0.96vw;
+        transition: transform 0.4s ease-in-out;
+    }
+    
+    .menuLateralOpcoes{
+        display: flex;
+        flex-direction: column;
+        font-size: 2vw;
+        margin-left: 1.11vw;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 1vw;
+    }
+    
+    .menuLateralOpcaoNaoAtiva
+    {
+        margin: 1vw;
+        padding-left: 0.74vw;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .menuLateralOpcaoAtiva{
+        border-left: 0.30vw solid #61dafb;
+        box-sizing: border-box;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+    
+    }
+    
+    /* Rodape */
+    .rodape{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1.48vw;
+        color: #61dafb;
+        background-color: #20232a;
+    }
+    
+    .redesSociais{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.74vw;
+        gap: 0.74vw;
+    
+    }
+    
+    
+    .instagram{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0.37vw;
+    }
+    
+    .iconeInstagram{
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+    
+    .textoInstagram{
+        font-size: 1.3vw;
+        color: #6b6b6b;
+    }
+
+    
+    .contato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 4vw;
+    }
+    
+    .rodapeTexto{
+        font-size: 1.4vw;
+        line-height: 0.45vw;
+        margin-bottom: 0;
+        line-break: anywhere;
+        width: 100%;
+        color: #6b6b6b;
+    }   
+    
+    .branco{
+        height: 240px;
+    }
+}

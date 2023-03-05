@@ -336,6 +336,7 @@ function Conteudo()
         <div className='conteudo'>
             <Cabecalho/>
             <MeioDaPagina/>
+            <div className='branco'> </div>
             <Rodape/>
         </div>
     )
@@ -343,7 +344,9 @@ function Conteudo()
 
 
 function PaginaInicial() {
-    document.title = "DECOM-UFOP|Início"
+    document.title = "DECOM-UFOP | Início";
+    console.log(window.innerWidth);
+
   return (
     <Conteudo/>
   );
