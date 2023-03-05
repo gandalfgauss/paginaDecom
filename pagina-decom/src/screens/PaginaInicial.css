@@ -367,7 +367,7 @@ a{
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    font-size: 20px;
+    font-size: 1.48vw;
     color: #61dafb;
     background-color: #20232a;
 }
@@ -375,19 +375,49 @@ a{
 .redesSociais{
     display: flex;
     flex-direction: column;
+    margin-left: 0.74vw;
+    gap: 0.74vw;
+
 }
+
+
+.instagram{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.37vw;
+}
+
+.iconeInstagram{
+    width: 1.18vw;
+    height: 1.18vw;
+}
+
+.textoInstagram{
+    font-size: 0.82vw;
+    color: #6b6b6b;
+}
+
+
+.textoInstagram:hover{
+    background-image: linear-gradient(to right, #f73d0d, #c70088);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+
 
 .contato{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 300px;
+    margin-left: 14.75vw;
 }
 
 .rodapeTexto{
-    font-size: 15px;
-    line-height: 6px;
+    font-size: 1.11vw;
+    line-height: 0.45vw;
     margin-bottom: 0;
     line-break: anywhere;
     width: 100%;
@@ -397,3 +427,4 @@ a{
 .emailUfop{
     text-decoration: underline;
 }
+

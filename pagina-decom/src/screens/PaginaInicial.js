@@ -16,8 +16,9 @@ import logoPPGCC from "../images/logoPPGCC.png";
 import logoTerraLAB from "../images/logoTerraLAB.png";
 import logoXR4 from "../images/logoXR4.png";
 
-import menuLateralSeta from "../images/menuLateralSeta.svg"
+import menuLateralSeta from "../images/menuLateralSeta.svg";
 
+import iconeInstagram from "../images/iconeInstagram.png";
 
 function Rodape()
 {
@@ -25,7 +26,32 @@ function Rodape()
     return (
         <div className='rodape'>
             <div className='redesSociais'>
-                <p>OI</p>
+                <div className="instagram">
+                    <img
+                        className='iconeInstagram'
+                        alt="Ícone do Instagram"
+                        src={iconeInstagram}
+                    />
+                    <a href='https://www.instagram.com/minhaufop/' className='textoInstagram'> @minhaufop </a>
+                </div>
+
+                <div className="instagram">
+                    <img
+                        className='iconeInstagram'
+                        alt="Ícone do Instagram"
+                        src={iconeInstagram}
+                    />
+                    <a href='https://www.instagram.com/comunicacao.iceb/' className='textoInstagram'> @comunicacao.iceb </a>
+                </div>
+
+                <div className="instagram">
+                    <img
+                        className='iconeInstagram'
+                        alt="Ícone do Instagram"
+                        src={iconeInstagram}
+                    />
+                    <a href='https://www.instagram.com/decom.ufop/' className='textoInstagram'> @decom.ufop </a>
+                </div>
             </div>
 
             <div className='contato'>
@@ -67,7 +93,7 @@ function Rodape()
 function MenuLateral(props)
 {
     const {referencias} = props
-    const [estadoImagem, setEstadoImagem] = React.useState(true);
+    const [estadoImagem, setEstadoImagem] = React.useState(false);
 
     const [estadoBemVindo, setEstadoBemVindo] = React.useState(false);
     const [estadoEducacao, setEstadoEducacao] = React.useState(false);
