@@ -777,6 +777,7 @@ a{
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
+        margin-left: 4vw;
         gap: 0.37vw;
     }
     
@@ -796,11 +797,11 @@ a{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: 4vw;
+        margin-left: 2vw;
     }
     
     .rodapeTexto{
-        font-size: 1.4vw;
+        font-size: 1.35vw;
         line-height: 0.45vw;
         margin-bottom: 0;
         line-break: anywhere;

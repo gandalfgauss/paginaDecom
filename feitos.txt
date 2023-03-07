@@ -1,2 +1,0 @@
-Cabeçalho-> Icone e Título
-Extenção para verificar responsividade: Mobile simulator

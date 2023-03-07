@@ -15,6 +15,7 @@ import logoICEB from "../images/logoICEB.png";
 import logoPPGCC from "../images/logoPPGCC.png";
 import logoTerraLAB from "../images/logoTerraLAB.png";
 import logoXR4 from "../images/logoXR4.png";
+import logoCSI from "../images/logoCSI.png";
 
 import menuLateralSeta from "../images/menuLateralSeta.svg";
 
@@ -233,6 +234,14 @@ function ConteudoPrincipal(props)
                             alt= "Logo do PPGCC"
                             className="principalEducacaoCarrocelImagem"/>
                     </a>
+
+                    <a href="https://csilab.ufop.br/"> 
+                        <img
+                            src={logoCSI}
+                            alt= "Logo do CSI-Lab"
+                            className="principalEducacaoCarrocelImagem"/>
+                    </a>
+                    
                     <a href="http://www2.decom.ufop.br/terralab/"> 
                         <img
                             src={logoTerraLAB}
